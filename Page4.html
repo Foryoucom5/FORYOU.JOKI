@@ -68,14 +68,14 @@
       letter-spacing: 2px;
     }
 
-    /* Update donors container style */
+    
     .donors-container {
       max-width: 1400px;
       margin: 40px auto;
       padding: 20px;
     }
 
-    /* Add new preview section */
+    
     .preview-section {
       margin-bottom: 40px;
       text-align: center;
@@ -90,7 +90,7 @@
       display: block;
     }
 
-    /* Style for top donors grid */
+    
     .top-donors-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -231,7 +231,22 @@
         height: 400px;
       }
     }
-  </style>
+  
+/* 
+@media (max-width: 768px) {
+  body { padding-left: 0 !important; }
+  .sidebar { display: none !important; }
+  header { margin-left: 0 !important; width: 100% !important; padding: 16px 20px !important; justify-content: center !important; }
+  nav { gap: 18px !important; flex-wrap: wrap !important; justify-content: center !important; }
+  .main-content { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+  .center-block { align-items: center !important; }
+  .title { font-size: 2rem !important; letter-spacing: .08em !important; }
+  .main-card { width: 100% !important; max-width: 420px !important; height: auto !important; }
+  .big-cards-row { flex-direction: column !important; align-items: center !important; gap: 20px !important; }
+  .big-card { width: 90% !important; height: auto !important; }
+  .footer { font-size: 0.8rem !important; padding: 10px !important; }
+}
+</style>
 </head>
 <body>
   <div class="bg-blur"></div>
@@ -254,7 +269,7 @@
       </a>
     </div>
 
-    <!-- Saweria Donors -->
+    <!-- Saweria -->
     <div class="platform-section">
       <h2 class="section-title">Top Saweria Donors</h2>
       <div class="donors-grid">
@@ -284,7 +299,7 @@
       </div>
     </div>
 
-    <!-- Trakteer Donors -->
+    <!-- Trakteer -->
     <div class="platform-section">
       <h2 class="section-title">Top Trakteer Donors</h2>
       <div class="donors-grid">
@@ -316,7 +331,7 @@
   </div>
 
   <script>
-    // Home button transition
+    // 
     const homeBtn = document.getElementById('homeBtn');
     if(homeBtn) {
       homeBtn.addEventListener('click', function(e) {
@@ -326,5 +341,9 @@
       });
     }
   </script>
+
+  <footer class="footer">
+    <p>© 2025 ForYouJoki. All rights reserved.</p>
+  </footer>
 </body>
 </html>

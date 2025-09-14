@@ -180,7 +180,22 @@
       .price-container { padding: 10px; }
       .price-card { margin: 10px; }
     }
-  </style>
+  
+/* 
+@media (max-width: 768px) {
+  body { padding-left: 0 !important; }
+  .sidebar { display: none !important; }
+  header { margin-left: 0 !important; width: 100% !important; padding: 16px 20px !important; justify-content: center !important; }
+  nav { gap: 18px !important; flex-wrap: wrap !important; justify-content: center !important; }
+  .main-content { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+  .center-block { align-items: center !important; }
+  .title { font-size: 2rem !important; letter-spacing: .08em !important; }
+  .main-card { width: 100% !important; max-width: 420px !important; height: auto !important; }
+  .big-cards-row { flex-direction: column !important; align-items: center !important; gap: 20px !important; }
+  .big-card { width: 90% !important; height: auto !important; }
+  .footer { font-size: 0.8rem !important; padding: 10px !important; }
+}
+</style>
 </head>
 <body>
   <div class="bg-blur"></div>
@@ -292,7 +307,7 @@
       }, i * 100);
     });
 
-    // Home button transition
+    // 
     const homeBtn = document.getElementById('homeBtn');
     if(homeBtn) {
       homeBtn.addEventListener('click', function(e) {
@@ -302,5 +317,9 @@
       });
     }
   </script>
+
+  <footer class="footer">
+    <p>© 2025 ForYouJoki. All rights reserved.</p>
+  </footer>
 </body>
 </html>
